@@ -30,7 +30,7 @@ accessModel:
   method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-13'
 image: https://playplay.com/favicon.ico
 tags:
 - Company
@@ -71,8 +71,39 @@ common:
   url: security/playplay-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/playplay-domain-security.yml
+- type: SignUp
+  url: https://playplay.com/sign-up
+- type: Plans
+  url: plans/playplay-plans-pricing.yml
+- type: Lifecycle
+  url: lifecycle/playplay-lifecycle.yml
+- type: Components
+  url: components/playplay-components.yml
+- type: LLMsTxt
+  url: llms/playplay-llms.txt
 x-enrichment:
-  date: '2026-07-20'
+  date: '2026-08-13'
   status: minimal
-  artifacts_added: 3
+  artifacts_added: 6
   pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    PlayPlay ships no developer program at all — api./developer./developers./docs.playplay.com
+    have no DNS record, /openapi.json 404s on playplay.com, app.playplay.com and
+    design.playplay.com, and all 242 English Help Center articles pulled from the public
+    Zendesk API mention an API zero times; the only integration PlayPlay documents is a
+    copy-paste HTML video embed.
+  evidence:
+  - url: https://playplay.com/openapi.json
+    status: 404
+  - url: https://app.playplay.com/openapi.json
+    status: 404
+  - url: https://app.playplay.com/graphql
+    status: 404
+  - url: https://playplay.com/.well-known/agent-card.json
+    status: 404
+  - url: https://playplay-support.zendesk.com/api/v2/help_center/en-us/articles.json
+    status: 200
+  checked: '2026-08-13'
