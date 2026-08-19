@@ -1,0 +1,77 @@
+generated: '2026-08-13'
+method: probed
+source: live HTTP probes of playplay.com, app.playplay.com and design.playplay.com
+note: >-
+  Every /.well-known/ path returned 404 on every PlayPlay host. No WellKnown or
+  SecurityTxt pointer is wired in apis.yml, because a recorded absence is not a
+  served surface — this file documents that PlayPlay serves no /.well-known/
+  documents, not that it serves some.
+hosts:
+- host: playplay.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app.playplay.com
+  note: production single-page web application host (the PlayPlay editor)
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: design.playplay.com
+  note: PlayPlay Design application host
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+summary:
+  paths_probed: 17
+  paths_200: 0
+  documents_saved: 0
+  well_known_pointer_emitted: false
+  security_txt_pointer_emitted: false

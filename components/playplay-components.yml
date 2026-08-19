@@ -1,0 +1,39 @@
+generated: '2026-08-13'
+method: searched
+source: https://help.playplay.com/hc/en-us/articles/17585550895249-How-do-I-embed-my-PlayPlay-video-on-my-website
+note: >-
+  PlayPlay ships no SDK and no component library. The single client-side surface
+  it publishes is a copy-paste HTML embed for a finished video, generated inside
+  the application per project. The embed markup and its player URL are issued by
+  the app, not documented as a URL pattern, so no template is recorded here —
+  only what PlayPlay itself states. This is not an API.
+component_count: 1
+families:
+- name: Video embed
+  kind: hosted-embed
+  distribution: copy-paste HTML snippet generated in the PlayPlay editor
+  loader: none
+  components:
+  - name: PlayPlay video embed
+    description: >-
+      Ready-to-paste responsive HTML block that plays a published PlayPlay video
+      on an external website or intranet. Obtained from the editor via Preview →
+      HD generation → Embed → copy the embed code.
+    parts:
+      - HTML wrapper tags for responsive display (adaptable by a developer)
+      - Embed video URL bound to one specific PlayPlay project (distinct from the share-link and landing-page URLs)
+      - Player options — autoplay is disabled by default; additional HTML player options may be added
+    behavior:
+      live_update: >-
+        Updating the video in PlayPlay updates the embedded player; the embed code
+        does not need to be republished.
+      revocation: >-
+        The embed stops working and shows an error when the subscription or free
+        trial ends, or when the project is not set to Published.
+    cms_targets:
+    - WordPress.org
+    - WordPress.com
+    - Drupal
+    - Magento
+    - SharePoint
+    docs: https://help.playplay.com/hc/en-us/articles/17585550895249-How-do-I-embed-my-PlayPlay-video-on-my-website

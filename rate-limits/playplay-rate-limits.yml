@@ -1,0 +1,39 @@
+generated: '2026-08-13'
+method: searched
+source: https://help.playplay.com/hc/en-us + https://playplay.com/pricing
+note: >-
+  PlayPlay publishes no API and therefore no rate limits. All 242 English Help
+  Center articles were retrieved through the public Zendesk Help Center API and
+  searched: not one mentions an API, a request quota, a throttle, a 429 or a
+  rate-limit header. The pricing matrix meters product features (logos, colours,
+  brand presets), not requests — videos and storage are advertised as unlimited
+  on both plans. NO `RateLimits` pointer is wired in apis.yml: this file records
+  the ABSENCE of published limits and must not be scored as a published
+  rate-limit surface.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+product_limits:
+- limit: Number of logos
+  free_trial: 2
+  subscription: unlimited
+  source: https://playplay.com/pricing
+- limit: Available colours
+  free_trial: 40
+  subscription: unlimited
+  source: https://playplay.com/pricing
+- limit: Number of brand presets
+  free_trial: 1
+  subscription: unlimited
+  source: https://playplay.com/pricing
+- limit: Number of videos
+  free_trial: unlimited
+  subscription: unlimited
+  source: https://playplay.com/pricing
+evidence:
+- url: https://playplay.com/pricing
+  status: 200
+- url: https://playplay-support.zendesk.com/api/v2/help_center/en-us/articles.json
+  status: 200
+  note: 242 articles retrieved; zero matches for API, webhook, rate limit or 429

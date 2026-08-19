@@ -1,0 +1,51 @@
+generated: '2026-08-13'
+method: probed
+source: live probes of playplay.com, playplay.statuspage.io and the PlayPlay Help Center
+note: >-
+  Recorded so a later round does not re-credit a surface that does not exist.
+  PlayPlay publishes no API, so it publishes no API versioning scheme, no
+  deprecation policy and no Sunset/Deprecation header contract. No `StatusPage`
+  and no `Deprecation` pointer is wired in apis.yml.
+status_page:
+  present: false
+  url: null
+  evidence:
+  - url: https://status.playplay.com/
+    status: 000
+    finding: hostname does not resolve (no DNS record)
+  - url: https://playplay.statuspage.io/
+    status: 200
+    finding: >-
+      SOFT 200, NOT a status page. The response is Atlassian's Statuspage
+      marketing page (canonical https://www.atlassian.com/software/statuspage),
+      served for an unclaimed subdomain. /api/v2/summary.json returns the same
+      HTML rather than Statuspage JSON. Do not treat this 200 as evidence of a
+      PlayPlay status page.
+  - url: https://playplay.com/status
+    status: 404
+versioning:
+  scheme: none-published
+  current_version: null
+deprecation_policy:
+  present: false
+  sunset_header: false
+  deprecation_header: false
+sla:
+  published: false
+  note: >-
+    No public SLA page. Enterprise support commitments (priority support,
+    dedicated video expert) are listed on the pricing matrix as sales-negotiated
+    services, not as a published uptime or response-time SLA.
+changelog:
+  present: false
+  evidence:
+  - url: https://playplay.com/product-updates
+    status: 404
+  - url: https://playplay.com/changelog
+    status: 404
+  - url: https://playplay.com/whats-new
+    status: 404
+  note: >-
+    Product news is announced through the blog and through Help Center webinar
+    articles; there is no dated, structured release note surface.
+deprecated_operations: []

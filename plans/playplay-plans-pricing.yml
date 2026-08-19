@@ -1,0 +1,80 @@
+generated: '2026-08-13'
+method: searched
+source: https://playplay.com/pricing
+docs: https://playplay.com/pricing
+currency: unknown
+billing_model: subscription
+note: >-
+  PlayPlay publishes a two-column plan comparison — a 7-day Free Trial and a paid
+  Subscription — with a full feature matrix but NO published price for the paid
+  tier: the call to action is "Talk to an expert". Prices are quoted by sales, so
+  every price field below is recorded as unknown rather than guessed. These are
+  product plans; PlayPlay publishes no API plans because it publishes no API.
+plan_count: 2
+plans:
+- name: Free Trial
+  price: 0
+  currency: USD
+  period: 7-day trial
+  public_signup: true
+  credit_card_required: false
+  quota:
+    videos: unlimited
+    video_storage: unlimited
+  included:
+  - Unlimited videos
+  - Unlimited video storage
+  - Download in mp4 HD
+  - 2-Factor Authentication (2FA)
+  - GDPR compliance
+  - Access to music library
+  - Upload your own media and music
+  - Help Center
+  - Chat and email support
+  - 'Formats: square, landscape, vertical'
+  - Max 2 logos
+  - 15+ predefined fonts
+  - 40 available colours
+  - 1 brand preset
+  limits:
+  - PlayPlay branding cannot be removed from videos
+  - No Single Sign-On (SSO)
+  - No custom backgrounds, custom outro or custom fonts
+  - No Getty Images / Pexels media library
+  - No private videos, password-protected share page or approval process
+  - No users/teams/permissions management
+  - No online payment with credit card
+  source: https://playplay.com/pricing
+- name: Subscription
+  price: null
+  price_disclosed: false
+  currency: unknown
+  period: unknown
+  public_signup: false
+  sales_gate: true
+  cta: Talk to an expert
+  quota:
+    videos: unlimited
+    video_storage: unlimited
+  included:
+  - Removal of PlayPlay branding on videos
+  - Single Sign-On (SSO)
+  - 2-Factor Authentication (2FA)
+  - GDPR compliance
+  - Custom fonts, custom icons, custom backgrounds, custom outro
+  - Unlimited logos and brand presets
+  - Getty Images / Pexels media library
+  - Company media library and external media collection
+  - Private videos, password-protected share page, approval process
+  - Users, teams and permissions management
+  - Team templates
+  - Video and editorial workshops, training with video experts
+  - Dedicated Video Expert, priority support
+  - Custom billing
+  limits:
+  - Price is not published; quoted by sales
+  source: https://playplay.com/pricing
+api_plans: []
+api_plans_note: >-
+  No API-tier pricing exists — PlayPlay ships no public developer API, so there is
+  nothing metered, no request quota and no overage schedule to record.

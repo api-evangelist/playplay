@@ -1,0 +1,51 @@
+# PlayPlay
+
+> PlayPlay is an online video and visual creation platform that lets business teams produce on-brand videos and images without prior editing experience. It serves marketing, communications and HR teams at large organizations through a drag-and-drop editor, AI-assisted tools and enterprise collaboration, brand-kit and review workflows.
+
+Generated: 2026-08-13
+Method: generated
+Source: apis.yml and the artifacts in this API Evangelist repository (https://github.com/api-evangelist/playplay). PlayPlay does not publish an llms.txt of its own — https://playplay.com/llms.txt returned 404 on 2026-08-13.
+
+## No developer API
+
+PlayPlay ships no public developer API. As of 2026-08-13 there is no OpenAPI or Swagger
+document, no GraphQL endpoint, no MCP server, no A2A agent card, no AsyncAPI or webhook
+catalog, no SDK on any package registry, no CLI and no developer portal. All 242 English
+Help Center articles were retrieved through the public Zendesk Help Center API and contain
+zero mentions of an API, webhook, SCIM or Zapier integration. Agents cannot call PlayPlay
+programmatically; the product is used through its web application.
+
+The one integration surface PlayPlay documents is a copy-paste HTML embed for a finished
+video — see components/playplay-components.yml.
+
+## Product
+
+- [PlayPlay](https://playplay.com/): Video and visual creation platform for business teams
+- [Pricing](https://playplay.com/pricing): 7-day Free Trial and a sales-quoted Subscription; the paid price is not published
+- [Help Center](https://help.playplay.com/hc/en-us): 242 English how-to and webinar articles
+- [Blog](https://playplay.com/blog/): Video, marketing and internal-communications content
+- [Sign up](https://playplay.com/sign-up): Free 7-day trial, no credit card required
+
+## Security and compliance
+
+- [Security](https://playplay.com/security): Security program overview and private bug bounty (100+ ethical hackers, running since 2022-10)
+- [Trust Center](https://security.playplay.com/): SOC 2 Type I and Type II, ISO 27001:2022, GDPR, CCPA
+- Domain posture (probed): TLS 1.3, HSTS with a one-year max-age, DNSSEC enabled, CAA records published, SPF present, DMARC policy `reject`
+
+## Repository artifacts
+
+- plans/playplay-plans-pricing.yml: The two published plans and their feature matrix
+- rate-limits/playplay-rate-limits.yml: Records that no API rate limits are published
+- lifecycle/playplay-lifecycle.yml: No status page, no versioning scheme, no deprecation policy
+- well-known/playplay-well-known.yml: Every /.well-known/ path 404s on every PlayPlay host
+- components/playplay-components.yml: The hosted video embed
+- security/playplay-domain-security.yml: Probed TLS, HSTS, DNSSEC, CAA, SPF and DMARC
+- security/playplay-trust-center.yml: Published certifications
+- security/playplay-vulnerability-disclosure.yml: Disclosure route and bug bounty
+
+## Optional
+
+- [Terms of service](https://playplay.com/legal-information)
+- [Privacy policy](https://playplay.com/privacy-policy)
+- [Careers](https://playplay.com/careers)
+- [Customer stories](https://playplay.com/customer-stories)
