@@ -1,4 +1,4 @@
-# playplay
+# PlayPlay
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,101 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-playplay is a company surfaced as a portfolio company of balderton-capital, insight-partners, point-nine and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+PlayPlay is an online video and visual creation platform that lets business teams produce on-brand videos and images without prior editing experience. Through a drag-and-drop editor, AI-assisted tools (text-to-video, script and voice-over generation, automatic subtitles) and enterprise collaboration, brand-kit and review workflows, it serves marketing, communications and HR teams at large organizations. Founded in France and backed by Balderton Capital, Insight Partners and Point Nine, PlayPlay is a SaaS product without a public developer API; this API Evangelist profile captures its published identity, legal and security surface (ISO 27001, SOC 2, GDPR).
 
-Backed by: balderton-capital, insight-partners, point-nine — https://playplay.com/
+**Areas:** Company · Video · Video Creation · Content Creation · Marketing · Media · Software-as-a-Service · Artificial Intelligence · No-Code
+
+## PlayPlay on APIs.io
+
+Everything profiled for PlayPlay is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/playplay/](https://apis.io/providers/playplay/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Playplay Domain Security](https://apis.io/security/playplay/playplay-domain-security/)
+- [Playplay Trust Center](https://apis.io/security/playplay/playplay-trust-center/)
+- [Playplay Vulnerability Disclosure](https://apis.io/security/playplay/playplay-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Playplay Plans Pricing](https://apis.io/plans/playplay/playplay-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Playplay Rate Limits](https://apis.io/rate-limits/playplay/playplay-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://playplay.com/)
+- [Pricing](https://playplay.com/pricing)
+- [Sign up](https://playplay.com/sign-up)
+- [Support](https://help.playplay.com/hc/en-us)
+- [Blog](https://playplay.com/blog/)
+- [Security](https://playplay.com/security)
+- [Compliance](https://playplay.com/security)
+- [Terms of service](https://playplay.com/legal-information)
+- [Privacy policy](https://playplay.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 25.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 81.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/playplay/](https://apis.io/providers/playplay/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PlayPlay: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/playplay/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
